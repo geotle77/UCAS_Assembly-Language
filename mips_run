@@ -1,0 +1,3 @@
+mipsel-linux-gnu-as -o $1.o $1.s
+mipsel-linux-gnu-ld -o $1 $1.o
+qemu-mipsel-static $1
